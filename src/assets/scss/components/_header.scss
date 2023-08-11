@@ -1,0 +1,24 @@
+
+header {
+    &.sticky-top {
+        z-index: 1000;
+    }
+}
+
+
+.navbar{
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+
+    i{
+        margin-right: 10px;
+    }
+
+    .search-input{
+        width: 32rem;
+
+        .md-form{
+            width: 100%;
+        }
+    }
+}
