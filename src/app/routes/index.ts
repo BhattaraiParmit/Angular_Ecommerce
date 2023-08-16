@@ -1,2 +1,2 @@
 export * from './routes.public'
-// export * from './routes.secure'
+export * from './routes.secure'

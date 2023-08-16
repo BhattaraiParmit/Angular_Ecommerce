@@ -1,0 +1,15 @@
+label{
+    font-size: 0.875rem;
+}
+
+.form-control{
+    border: none !important;
+    font-size: $input-font-size !important;
+    padding: $input-padding-x $input-padding-y !important;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    // opacity: 55%;
+    background-color: $selected-bg;
+    color: $gray-dark;
+}

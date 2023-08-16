@@ -1,4 +1,168 @@
-<p>login works!</p>
+<div class="row align-items-center justify-content-center d-flex pt-5">
+  <div class="col-5">
+    <div class="card mb-4" *ngIf="component == 'register'">
+      <div class="card-body">
+        <h5
+          class="card-title d-flex align-items-center justify-content-center fw-bold"
+        >
+          New Customer Registration
+        </h5>
 
+        <button class="btn btn-secondary social-login mt-4 w-100">
+          <i class="fab fa-google"></i> Signup with google
+        </button>
+        <div class="border-line mt-3 d-flex align-items-center">
+          <div class="line"></div>
+          <p class="mx-3">or signup with email</p>
+          <div class="line"></div>
+        </div>
+        <div class="form-body pt-4">
+          <form #loginForm="ngForm">
+            <div class="d-flex">
+              <div class="col-6 px-2">
+                <label for="firstName" class="form-label">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  [(ngModel)]="loginModel.firstName"
+                  #firstName="ngModel"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-6">
+                <label for="firstName" class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  [(ngModel)]="loginModel.lastName"
+                  #lastName="ngModel"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="d-flex pt-3">
+              <div class="col px-2">
+                <label for="firstName" class="form-label">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+            </div>
+            <div class="d-flex pt-3">
+              <div class="col px-2">
+                <label for="firstName" class="form-label">Contact Number</label>
+                <input
+                  type="email"
+                  name="email"
+                  [(ngModel)]="loginModel.email"
+                  #email="ngModel"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="pt-3">
+              <div class="col px-2">
+                <label for="firstName" class="form-label">Password</label>
+                <input type="password" class="form-control" />
+                <p class="fs-9">Password must be 8 character long</p>
+              </div>
+            </div>
+            <div class="pt-3">
+              <div class="col px-2">
+                <label for="firstName" class="form-label"
+                  >Confirm Password</label
+                >
+                <input type="password" class="form-control" />
+              </div>
+            </div>
+            <div class="d-flex align-items-center pt-4 ps-2">
+              <div class="check-box pe-2">
+                <input type="checkbox" class="form-check-input pe-2" />
+              </div>
+              <p class="fw-bold">I Agree with term and condition</p>
+            </div>
+            <div class="button pt-5">
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100" (click)="login('login')">Signup</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="d-flex justify-content-center pt-3">
+          <span class="d-flex align-items-center">
+            Already a member?
+            <p>
+              <a
+                href="javascript:void(0)"
+                class="fw-bold ps-1"
+                (click)="switchComponent('login')"
+                >Login and Continue</a
+              >
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="card" *ngIf="component == 'login'">
+      <div class="card-body">
+        <h5
+          class="card-title d-flex align-items-center justify-content-center fw-bold"
+        >
+          Sign in to your account
+        </h5>
 
-<h1>Login</h1>
+        <button class="btn btn-secondary social-login mt-4 w-100">
+          <i class="fab fa-google"></i> Signin with google
+        </button>
+        <div class="form-body pt-4">
+          <form #loginForm = "ngForm">
+            <div class="d-flex pt-3">
+              <div class="col px-2">
+                <label for="firstName" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  [(ngModel)]="loginModel.email"
+                  #email="ngModel"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <div class="col px-2">
+                <label for="firstName" class="form-label">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  [(ngModel)]="loginModel.password"
+                  #password="ngModel"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="d-flex justify-content-end pt-2">
+              <p class="fw-bold">Forgot password?</p>
+            </div>
+            <div class="button pt-4">
+              <div class="col-12">
+                <button type="submit" (click)="login('login')" [disabled]="loginModel.email == '' || loginModel.password == '' " class="btn btn-primary w-100">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="d-flex justify-content-center pt-3">
+          <span class="d-flex align-items-center">
+            Dont have an account?
+            <p>
+              <a
+                href="javascript:void(0)"
+                class="fw-bold ps-1"
+                (click)="switchComponent('register')"
+                >create one now</a
+              >
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
