@@ -1,14 +1,22 @@
-.social-account{
-    border: 1px solid black;
-    text-align: center;
-    align-items: center;
-    height: 50px;
-}
 
+.social-login{
+    i{
+        font-size: 24px;
+        margin-right: 16px;
+    }
+}
 
 
 .line{
     height: 1px;
     background-color: black;
     width: 190px
+}
+
+.border-line{
+
+    p{
+        font-weight: bold;
+        font-size: 13px;
+    }
 }

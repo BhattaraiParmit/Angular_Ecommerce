@@ -1,1 +1,108 @@
+// google font
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+$primary: #2A3969;
+$primary-dark: #B35F00;
+$secondary: #87B540;
+$gray-darker: #2D2D2D;
+$gray-dark: #525252;
+$gray-main: #848484;
+$gray-light : #F2F2F2;
+$gray-lighter: #F8F9FA;
+$success-main: #009262;
+$success-lighter: #E3FFF5;
+$info-main: #116A9F;
+$info-lighter: #E5F5FF;
+$warning-main: #F6BD41;
+$warning-lighter: #FFE7E5;
+$warning-darker: #AF7B08;
+$warning-dark:#E6A313;
+$error-main: #B3251E;
+$error-light: #D2443D;
+$error-lighter: #FFE7E5;
+$red: $error-main;
+$font-family-base: 'Montserrat', sans-serif;
+$link-color: $primary;
+$primary-gradient: linear-gradient(90.77deg, #F7911E 17.8%, #FF5C26 98.81%);
+$table-striped-bg : #F8F9FA;
+$border-light : #F2F2F2;
+$border-dark : #B2B2B2;
+$selected-bg : #E1E2E2;
+
+
+$theme-colors: (
+  'primary': $primary,
+  'primary-dark': $primary-dark,
+  'secondary': $secondary,
+  'success': $success-main,
+  'info': $info-main,
+  'warning': $warning-main,
+  'danger': $error-main,
+  'gray-darker': $gray-darker,
+  'gray-dark': $gray-dark,
+  'gray-main': $gray-main,
+  'light': $gray-lighter,
+  'gray-light': $gray-light,
+  'gray-lighter': $gray-lighter,
+  'red': $error-main,
+  'success-lighter' : $success-lighter,
+  'info-lighter' : $info-lighter,
+  'error-lighter' : $error-lighter,
+  'warning-lighter': $warning-lighter,
+  'warning-darker' : $warning-darker,
+  'warning-dark' : $warning-dark
+  // 'link': $link-color,
+);
+// contrast ratio
+// $min-contrast-ratio: 3;
+
+// Typography
+$line-height-base: 1.5;
+$large-font: 1rem;
+$medium-font:0.875rem;
+$small-font:0.75rem;
+
+
+// layout container
+$container-padding-x: 1rem;
+
+// navbar
+$navbar-height: 3.75rem;
+$nav-link-padding-x: 0.625rem;
+
+// button
+$btn-border-radius: 2px;
+$btn-height: 2.5rem;
+$btn-font-size: 0.875rem;
+$btn-padding-top: 0.615rem;
+$btn-padding-bottom: 0.615rem;
+
+// button lg
+$btn-height-lg: 3.125rem;
+$btn-font-size-lg: 1rem;
+$btn-padding-top-lg: 0.765rem;
+$btn-padding-bottom-lg: $btn-padding-top-lg;
+
+// button floating
+$btn-floating-width: $btn-height;
+$btn-floating-height: $btn-height;
+
+// form
+$input-height: $btn-height;
+$input-font-size: 0.875rem;
+$input-padding-x: 0.615rem;
+$input-padding-y: 0.75rem;
+
+// input lg
+$input-bg: $gray-light;
+$input-group-lg-height: 3.125rem;
+$input-border-radius: 0.125rem;
+$input-border-radius-lg: 0.125rem;
+$btn-border-radius-lg: 0.125rem;
+
+// table
+$table-cell-padding-y: 0.625rem;
+
+// sidenav
+$zindex-sidenav: 1000;

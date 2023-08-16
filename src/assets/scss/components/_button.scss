@@ -1,0 +1,82 @@
+.btn {
+    color: $gray-lighter;
+    text-transform: unset;
+    height: $btn-height;
+    box-shadow: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+  
+    &:hover {
+      box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+      ;
+    }
+  
+    &-floating {
+      &.dropdown-toggle {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  
+    &-lg {
+      height: $btn-height-lg;
+    }
+  
+    &-gradient {
+      background: $primary-gradient;
+  
+      &:hover {
+        color: $gray-lighter;
+      }
+    }
+  
+    &-clear {
+      background-color: transparent;
+    }
+  
+    &-secondary,
+    &-secondary:disabled {
+      background-color: $gray-main;
+  
+      &:hover,
+      &:focus {
+        background-color: $gray-main !important;
+      }
+    }
+  
+    &-light {
+      background-color: $gray-light;
+    }
+  }
+  
+  .navbar-toggler {
+    position: absolute;
+    // z-index: $zindex-popover;
+    top: 8px;
+    background: $primary-gradient;
+  }
+  
+  .slim-height {
+    min-height: 3.75rem;
+  }
+  
+  .btn-floating.btn-sm,
+  .btn-group-sm>.btn-floating.btn {
+    width: 44px !important;
+    height: 44px !important;
+  
+    i {
+      font-size: $large-font;
+    }
+  }
+  
+  .row-btn {
+    padding: 8px 16px 8px 16px;
+    border-radius: 0;
+    height: 50px;
+    &:hover, &:focus {
+      box-shadow: none !important;
+  
+    }
+  }
